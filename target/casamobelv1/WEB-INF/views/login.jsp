@@ -1,26 +1,33 @@
+
+  <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <jsp:include page="header.jsp"/>
 <div class="bg-content">
-  <div class="container">
-  </div>
-  <div class="login">
-      <div class="arrow-up"></div>
-      <div class="formholder">
-        <div class="randompad">
-           <fieldset>
-             <label name="email">Email</label>
-             <input type="email" value="example@example.com" />
-             <label name="password">Password</label>
-             <input type="password" />
-             <input type="submit" value="Login" />
- 
-           </fieldset>
-        </div>
-      </div>
+  <div id="content">
+    <div class="container">
+        <div class="card card-container">
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form:form class="form-signin" method="POST" name="Login" action="" commandName="Login">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form:form><!-- /form -->
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+            <a href="NewUser" class="forgot-password">
+                New User SignIn?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
     </div>
-    </div>
-  </div>
+</div>
+
 <jsp:include page="footer.jsp"/>
- <script src="js/index.js"></script>
-<script src="resources/js/bootstrap.js"></script>
-</body>
-</html>

@@ -1,1 +1,6 @@
+com\casamobel\model\Login.class
+com\casamobel\controller\ProductController.class
+com\casamobel\model\Product.class
+com\casamobel\model\NewUser.class
+com\casamobel\dao\ProductDao.class
 com\casamobel\controller\LoginController.class

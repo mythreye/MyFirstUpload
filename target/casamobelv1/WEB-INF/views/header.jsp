@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="resources/css/responsive.css" type="text/css" media="screen">
 <link rel="stylesheet" href="resources/css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="resources/css/style1.css" type="text/css" media="screen">
 <link rel="stylesheet" href="resources/css/touchTouch.css" type="text/css" media="screen">
 <link rel="stylesheet" href="resources/css/kwicks-slider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/normalize.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <script src="resources/js/jquery.js"></script>
 <script src="resources/js/superfish.js"></script>
@@ -40,19 +42,20 @@ jQuery(window).load(function () {
 <title>CASA MOBEL</title>
 </head>
 <body>
-  <div class="container">
+<div class="container clearfix">
     <div class="row">
       <div class="span12">
         <div class="navbar navbar_">
           <div class="container">
-            <h1 class="brand brand_"><a href="index.html"><img alt="" src="resources/img/logo.jpg"> </a></h1>
+            <h1 class="brand brand_"><a href="index.jsp"><img alt="" src="resources/img/logo.jpg"> </a></h1>
             <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
             <div class="nav-collapse nav-collapse_  collapse">
               <ul class="nav sf-menu">
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="contactus">Contact</a></li>
-                <li><a href="login">Log In</a></li>
+                <li><a href="Login">Log In</a></li>
+                <li><a href="product">Product</a></li>
               </ul>
             </div>
           </div>
@@ -60,6 +63,6 @@ jQuery(window).load(function () {
       </div>
     </div>
   </div>
-  <script src="resources/WebContent/js/bootstrap.js"></script>
+    <script src="resources/WebContent/js/bootstrap.js"></script>
   </body>
 </html>

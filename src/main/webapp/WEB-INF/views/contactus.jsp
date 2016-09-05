@@ -1,5 +1,5 @@
 <jsp:include page="header.jsp"/>
-</div><div class="bg-content">
+<div class="bg-content">
   <div id="content">
     <div class="container">
       <div class="row">
